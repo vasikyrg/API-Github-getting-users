@@ -3,9 +3,7 @@ import pandas as pd
 from requests.auth import HTTPBasicAuth
 
 # Authentication
-auth = HTTPBasicAuth('vasikyrg', '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')
-# auth = HTTPBasicAuth('DimitriosSpanos', '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')
-
+#Enter your authentication to get more access auth = auth
 
 # Get info about a specific user/organization by his/her/its username
 def get_user(username):
@@ -455,25 +453,8 @@ def main():
     members = get_members(org)
     member_list = get_member_list(members, org)
     create_dataset(member_list)
-    # commits = get_commits(members)
-    # organization_info(org)
-    # dataset_commits = pd.DataFrame(members, columns=['Username'])
-    # dataset_members.to_csv('dataset_members.csv', index=False)
-    # members_list = get_member_list(org)
-    # create_dataset(members_list)
-    # total_open_issues, total_closed_issues = issues(org)
-    # dataset_commits["Commits"] = commits
-    # dataset_mercedes["Closed Issues"] = total_closed_issues
-    # dataset_commits.to_csv('dataset_commits.csv')
 
 
 if __name__ == '__main__':
     main()
 
-# getUser("AuthEceSofteng")
-# getUserRepos("AuthEceSofteng")
-# getRepoInfo("AuthEceSofteng", "emb-ntua-workshop")
-# getMostPopularRepositoriesInfos()
-# getRepoIssuesComments("AuthEceSofteng", "emb-ntua-workshop")
-# getRepoReleases("AuthEceSofteng", "emb-ntua-workshop")
-# getRepoCommit("AuthEceSofteng", "emb-ntua-workshop", "41e03e26db38caf3d2b9c500d56be1a1327d8c84")
